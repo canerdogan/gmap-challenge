@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
   web:
@@ -10,4 +10,5 @@ services:
       - "443:443"
     restart: always
     environment:
+      APPLICATION_ENV: development
       WEBROOT: "/var/www/html/public/"

@@ -4,19 +4,16 @@ Synergist.io Challenge
 
 Testing
 -------
-
 To run the test for this, run:
 
 ```
 docker-compose up
 ```
+Run Server
+----------
 
-Examples
---------
-### Basic Usage
+To run the server, run:
 
-**Retrieving All Models**
-
-```php
-$users = User::all();
+```
+docker-compose -f docker-compose-server.yml up
 ```

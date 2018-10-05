@@ -1,12 +1,8 @@
 <?php
 
 use App\Services\GoogleMapAPI;
-use Symfony\Component\Dotenv\Dotenv;
 
 require __DIR__ . '/../vendor/autoload.php';
-
-$dotenv = new Dotenv();
-$dotenv->load(__DIR__.'/../.env');
 
 ?>
 <!DOCTYPE html>
@@ -62,9 +58,7 @@ $dotenv->load(__DIR__.'/../.env');
 			endforeach;
 			?>
 			<h3>Raw data is:</h3>
-			<?php
-			var_dump( $addresses );
-			?>
+			<pre><?php var_dump( $addresses ); ?></pre>
 		<?php else: ?>
 		<h3>We couldn't find any result</h3>
 		<h5><?php print $addresses ?></h5>

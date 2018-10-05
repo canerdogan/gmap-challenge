@@ -2,7 +2,6 @@
 
 use App\Services\GoogleMapAPI;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Dotenv\Dotenv;
 
 class GoogleMapAPITest extends TestCase
 {
@@ -12,8 +11,6 @@ class GoogleMapAPITest extends TestCase
 
 	public function setUp ()
 	{
-		$dotenv = new Dotenv();
-		$dotenv->load( __DIR__ . '/../.env' );
 		$this->googleMapAPI = new GoogleMapAPI();
 	}
 

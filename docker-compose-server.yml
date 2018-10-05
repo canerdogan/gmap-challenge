@@ -10,5 +10,6 @@ services:
       - "443:443"
     restart: always
     environment:
+      GOOGLE_API_KEY: ""
       APPLICATION_ENV: development
       WEBROOT: "/var/www/html/public/"

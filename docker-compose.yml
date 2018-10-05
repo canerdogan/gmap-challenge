@@ -9,4 +9,6 @@ services:
     volumes:
       - .:/code
     working_dir: /code
+    environment:
+      GOOGLE_API_KEY: ""
     command: bash -c "composer install --prefer-source --no-interaction && php ./vendor/bin/phpunit"

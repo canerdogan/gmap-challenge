@@ -8,6 +8,7 @@ sudo: false
 
 before_script:
   - travis_retry composer self-update
+  - travis_retry composer require php-coveralls/php-coveralls
   - travis_retry composer install --dev --no-interaction
 
 script:

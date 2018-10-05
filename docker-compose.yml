@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  php:
+    container_name: php
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/code
+    working_dir: /code
+    command: bash -c "composer install --prefer-source --no-interaction && php ./vendor/bin/phpunit"

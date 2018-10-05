@@ -1,0 +1,9 @@
+.DS_Store
+.env
+vendor/
+composer.lock
+phpunit.phar
+*.sublime-project
+*.sublime-workspace
+*.project
+.idea/
